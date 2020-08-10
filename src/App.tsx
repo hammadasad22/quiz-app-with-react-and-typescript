@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     async function fetchData() {
-      const questions: QuestionType[] = await getQuizDetails(5, 'easy');
+      const questions: QuestionType[] = await getQuizDetails(10, 'easy');
       setquiz(questions)
     }
     fetchData()
